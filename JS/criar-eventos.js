@@ -17,7 +17,7 @@ eventoForm.addEventListener('submit', async (event) => {
 
   //dados do formulario para envio a API
   const novoEvento = {
-    name: nome.value,
+            name: nome.value,
             poster: "https://as1.ftcdn.net/v2/jpg/01/08/17/48/1000_F_108174890_bPrqlS1Ziz40MUizqKTthmhx3q6jsuSK.jpg",
             attractions: artist.value.split(', '),
             description: description.value,

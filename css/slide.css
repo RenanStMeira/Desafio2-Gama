@@ -1,0 +1,22 @@
+#slider {
+    height: 1000px;
+    display:flex;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    top: -49px
+}
+
+#slider img {
+    opacity: 0;
+    position: absolute; 
+    width: 99vw; 
+    height: 110%;
+    object-fit: cover;
+    transition: opacity 800ms;
+    
+}
+
+#slider .selected {
+    opacity: 1;
+}
