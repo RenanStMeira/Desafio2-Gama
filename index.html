@@ -35,57 +35,46 @@
             </div>
 
         </section>
-        <section class="full">
-            <div class="container text-center">
-                <h2>Próximos eventos</h2>
+       
+        <div id="posts-container">
+          <a href="eventos.html">Voltar</a>
+          <div id="post-container"></div>
+          <h2>Comentários:</h2>
+          <form id="comment-form">
+            <div>
+              <label for="nome">Nome:</label>
+              <input
+                type="nome"
+                name="nome"
+                id="nome"
+                placeholder="nome"
+                required
+              />
             </div>
-            <div id="eventos" class="container d-flex justify-content-center align-items-center"></div>
-               <article class="evento card p-5 m-3">
-                    <h2>nome do evento - 05/03/2022</h2>
-                    <h4>Arctic Monkeys, The Kooks, Hiatus Kaiyote</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro aperiam sunt quo similique,
-                        dolorum consectetur inventore ipsam, officiis neque natus eius harum alias quidem. Possimus
-                        nobis in inventore tenetur asperiores.</p>
-                        <button id="openModalBtn">Reservar Ingresso</button>
-                </article>
-                <article class="evento card p-5 m-3">
-                    <h2>nome do evento - 05/03/2022</h2>
-                    <h4>Arctic Monkeys, The Kooks, Hiatus Kaiyote</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro aperiam sunt quo similique,
-                        dolorum consectetur inventore ipsam, officiis neque natus eius harum alias quidem. Possimus
-                        nobis in inventore tenetur asperiores.</p>
-                        <button id="openModalBtn">Reservar Ingresso</button>
-                </article>
-                <article class="evento card p-5 m-3">
-                    <h2>nome do evento - 05/03/2022</h2>
-                    <h4>Arctic Monkeys, The Kooks, Hiatus Kaiyote</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro aperiam sunt quo similique,
-                        dolorum consectetur inventore ipsam, officiis neque natus eius harum alias quidem. Possimus
-                        nobis in inventore tenetur asperiores.</p>
-                        <button id="openModalBtn">Reservar Ingresso</button>
-                            <!--Modal-->
-                        <div id="myModal" class="modal">
-                            <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <h2>Formulário de Reserva</h2>
-                            <form id="reservationForm">
-                                <label for="nome">Nome:</label>
-                                <input type="text" id="nome" name="nome" required>
-                                <label for="email">Email:</label>
-                                <input type="email" id="email" name="email" required>
-                                <label for="tickets">Quantidade de Ingressos:</label>
-                                <input type="number" id="tickets" name="tickets" min="1" max="10" required>
-                                <input id="reserv" type="submit" value="Reservar">
-                            </form>
-                            </div>
-                        </div>
-                                            
-                </article>
-            </div>
-            <div class="container text-center">
-                <a href="eventos.html" class="btn btn-secondary">ver todos os eventos</a>
-            </div>
-        </section>
+            <div>
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Digite seu e-mail"
+                  required
+                />
+              </div>
+              <div>
+                <label for="email">Quantidade de ingresso:</label>
+                <input
+                  type="qtdingresso"
+                  name="qtd"
+                  id="qtdingresso"
+                  placeholder="Quantidade"
+                  required
+                />
+              </div>
+            <input type="submit" value="Enviar" />
+          </form>
+          <div id="comments-container"></div>
+        </div>
         <section class="full d-flex justify-content-center align-items-center"
             style="background-color: #f2f2f2; color: #555">
             <div class="container">
